@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Mehribon va Rahimli Alloh nomi bilan boshlayman-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/zoru"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="518dp"
+        android:layout_height="435dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/zikr"
+        android:src="@drawable/zikrr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c_view"
+        android:layout_width="355dp"
+        android:layout_height="312dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="52dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/reset"
+            android:layout_width="64dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="108dp"
+            android:src="@drawable/resetic"/>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:text="0"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/tasbeh"
+            android:layout_width="137dp"
+
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/tas" />
+
+        <ImageView
+            android:id="@+id/btn_count"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/kaba" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
